@@ -25,16 +25,16 @@ public class Spaceship : MonoBehaviour
     void FixedUpdate()
     {
         // Input
-        float y = Input.GetAxisRaw("Vertical");
+        float yInput = Input.GetAxisRaw("Vertical");
 
         // Gyorsítás
-        velocity += transform.up * acceleration * y * Time.fixedDeltaTime;
+        velocity += transform.up * acceleration * yInput * Time.fixedDeltaTime;
+
+        // Max sebesség
+        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
 
         // Lassítás (Közegellenállás)
         Vector3 dragVector = -velocity * drag;
         velocity += dragVector * Time.fixedDeltaTime;
-
-        // Max sebesség
-        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
     }
 }
