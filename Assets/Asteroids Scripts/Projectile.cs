@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -12,7 +11,6 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
-
     void Update()
     {
         transform.position += transform.right * Time.deltaTime * speed;
@@ -23,7 +21,7 @@ public class Projectile : MonoBehaviour
         HealthObject healthObject = other.GetComponent<HealthObject>();
         if (healthObject != null) 
         {
-            healthObject.currentHp -= damage;
+            healthObject.Damage(damage);
             Destroy(gameObject);
         }
     }

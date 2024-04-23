@@ -16,13 +16,13 @@ public class ScreenTeleporter : MonoBehaviour
     void Update()
     {
         Vector2 cameraCenter = camera.transform.position;
-        Vector2 cameraSize = new (camera.orthographicSize * camera.aspect, camera.orthographicSize);
+        Vector2 cameraExtent = new (camera.orthographicSize * camera.aspect, camera.orthographicSize);
 
-        Rect cameraRect = new (cameraCenter - cameraSize, cameraSize * 2);
+        Rect cameraRect = new (cameraCenter - cameraExtent, cameraExtent * 2);
         Bounds objectBounds = collider2D.bounds;
 
-        float yJump = (cameraSize.y * 2 + objectBounds.size.y);
-        float xJump = (cameraSize.x * 2 + objectBounds.size.x);
+        float yJump = (cameraExtent.y * 2 + objectBounds.size.y);
+        float xJump = (cameraExtent.x * 2 + objectBounds.size.x);
 
         if (objectBounds.min.y > cameraRect.yMax)
         {
