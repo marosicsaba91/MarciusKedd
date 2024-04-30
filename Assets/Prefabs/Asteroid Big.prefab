@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4110837094771817419}
+  - component: {fileID: 2265858561036779820}
   - component: {fileID: 2224602028264427114}
   - component: {fileID: 4720992448653160262}
   - component: {fileID: 7277977404066918647}
-  - component: {fileID: 2265858561036779820}
   - component: {fileID: 5804578595357388372}
   - component: {fileID: 8065710290093190518}
   m_Layer: 0
@@ -37,6 +37,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2265858561036779820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3752121862398224061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d092c3eb79a2774db289792e40d6f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 5
+  maxAgularSpeed: 90
 --- !u!212 &2224602028264427114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -235,7 +249,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1176.9294
+  m_Mass: 93.6522
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -250,20 +264,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2265858561036779820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3752121862398224061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d092c3eb79a2774db289792e40d6f83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 5
-  maxAgularSpeed: 90
 --- !u!114 &5804578595357388372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,3 +290,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHp: 100
   collisionDamage: 10
+  spriteRenderer: {fileID: 2224602028264427114}
+  sprites:
+  - {fileID: 21300000, guid: 334d18a3b96b7204c8698ceea40bdd27, type: 3}
+  - {fileID: 21300002, guid: 334d18a3b96b7204c8698ceea40bdd27, type: 3}
+  - {fileID: 21300004, guid: 334d18a3b96b7204c8698ceea40bdd27, type: 3}
+  - {fileID: 21300006, guid: 334d18a3b96b7204c8698ceea40bdd27, type: 3}
+  - {fileID: 21300008, guid: 334d18a3b96b7204c8698ceea40bdd27, type: 3}
+  - {fileID: 21300010, guid: 334d18a3b96b7204c8698ceea40bdd27, type: 3}

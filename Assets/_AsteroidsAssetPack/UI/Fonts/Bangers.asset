@@ -102,7 +102,7 @@ Material:
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.049159914, g: 0, b: 0.20784314, a: 1}
+    - _OutlineColor: {r: 0.066037714, g: 0, b: 0.0013067718, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -168,13 +168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Bangers
   m_EditorClassIdentifier: 
-  hashCode: -1147108856
+  hashCode: -1188743986
   material: {fileID: -5744133185206520957}
-  materialHashCode: -1546211160
+  materialHashCode: 982049326
   m_Version: 1.1.0
   m_SourceFontFileGUID: aeb97d94b9684ba4d95a858c16c1cfb8
-  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: aeb97d94b9684ba4d95a858c16c1cfb8,
-    type: 3}
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: aeb97d94b9684ba4d95a858c16c1cfb8, type: 3}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
   m_FaceInfo:
